@@ -1,0 +1,90 @@
+TCN + SELF ATTENTION
+
+TEST RESULTS
+
+loss           : 0.0211
+compile_metrics: 0.9931
+
+CONFUSION MATRIX
+
+                 Predicted
+                 Non-Fatigue   Fatigue
+Actual Non-Fatigue        504            1
+Actual Fatigue              4          214
+
+
+CLASSIFICATION METRICS
+
+Accuracy    : 0.9931
+Precision   : 0.9953
+Recall      : 0.9817
+Specificity : 0.9980
+F1 Score    : 0.9885
+
+
+
+
+       TCN + SELF-ATTENTION TRAINING COMPLETED
+
+
+Input shape:
+(20 time steps × 10 features)
+
+Training samples : 3374
+Validation samples : 723
+Testing samples : 723
+
+Architecture:
+TCN Residual Blocks
+        ↓
+Multi-Head Self-Attention
+        ↓
+Global Average Pooling
+        ↓
+Dense Classification
+        ↓
+Fatigue / Non-Fatigue
+
+
+
+
+
+
+
+
+ONLY TCN
+
+
+loss           : 0.0840
+compile_metrics: 0.9668
+
+
+CONFUSION MATRIX
+
+
+                 Predicted
+                 Non-Fatigue   Fatigue
+Actual Non-Fatigue        492          13
+Actual Fatigue             11         207
+
+
+CLASSIFICATION METRICS
+
+
+Accuracy    : 0.9668
+Precision   : 0.9409
+Recall      : 0.9495
+Specificity : 0.9743
+F1 Score    : 0.9452
+
+Train samples      : 3374
+Validation samples : 723
+Test samples       : 723
+
+
+
+
+
+
+
+

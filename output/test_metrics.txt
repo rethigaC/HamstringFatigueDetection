@@ -1,0 +1,11 @@
+HAMSTRING FATIGUE TCN TEST RESULTS
+===================================
+
+Accuracy  : 0.9793
+Precision : 0.9394
+Recall    : 0.9954
+F1 Score  : 0.9666
+
+Confusion Matrix:
+[[491  14]
+ [  1 217]]
